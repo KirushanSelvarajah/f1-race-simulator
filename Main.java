@@ -13,15 +13,10 @@ public class Main{
           System.out.println("Difference in base lap time between Kirushan and Lewis: " + timeDifference );
           for (int Lap = 1; Lap <= 10; Lap++){
                       double tyreWear = Math.pow(1.0005,Lap);
-          double lapTime = Driver1.basePace*tyreWear;
-           System.out.println("Lap time for Lap: " + Lap + " is: " + lapTime);
-           for (int Lap = 1; Lap <= 10; Lap++){
-                      double tyreWear = Math.pow(1.0005,Lap);
           double lapTime1 = Driver1.basePace*tyreWear;
-           System.out.println("Lap time for " + Driver1.name  + "'s "+ Lap + " is: " + lapTime1);
+           System.out.println("Lap time for " + Driver1.name  + "'s Lap "+ Lap + " is: " + lapTime1);
           double lapTime2 = Driver2.basePace*tyreWear;
-           System.out.println("Lap time for "  + Driver2.name + "'s "+ Lap + " is: " + lapTime2);
+           System.out.println("Lap time for "  + Driver2.name + "'s Lap "+ Lap + " is: " + lapTime2);
           }
           }
-    }
 }
